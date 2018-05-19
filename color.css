@@ -1,4 +1,4 @@
-body {background-color: #ffffff; font: normal 85% "arial" , sans-serif;}
+body {background-color: #ffffff;}
 h1 {border: solid 1px #000000; background-color: #7f9fc0; color: #000000;}
 h2 {color: #000000;}
 h3 {color: #000000}
@@ -32,5 +32,3 @@ h3 {color: #000000}
 
 /********************* New class for logos **********************/
 .logos img {border: solid 0px #000000;}
-
-

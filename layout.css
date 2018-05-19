@@ -1,17 +1,67 @@
-h1 {padding: 10px; padding-left: 15px;}
-h2 {margin: 0; padding: 0;}
-h3 {margin: 0; text-align: left;}
-p {text-align: justify;}
+h1 {
+    padding: 10px;
+    padding-left: 15px;
+    font-family: "Cabin", "Trebuchet MS", "Lucida Grande", sans-serif;
+}
+h2 {
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    font-family: "Cabin", "Trebuchet MS", "Lucida Grande", sans-serif;
+    font-style: italic;
+    border-bottom: 1px solid #aaa;
+}
+h3 {
+    margin: 0;
+    padding-top: 10px;
+    margin-bottom: -12px;
+    text-align: left;
+    font-family: "Cabin", "Trebuchet MS", "Lucida Grande", sans-serif;
+	font-size: 92%;
+}
+h4 {
+    margin: 0;
+    padding: 0;
+}
+p {
+	text-align: justify;
+    font-family: "PT Serif", Georgia, serif;
+}
+li {
+    font-family: "PT Serif", Georgia, serif;
+}
+pre {
+    margin-left: 24px;
+    margin-right: 24px;
+    padding: 1em;
+    border: 1px dashed #2f6fab;
+    color: black;
+    background-color: #f9f9f9;
+    font-family: "Andale Mono", "Lucida Console", monospace;
+	font-size: 90%
+}
 
 #perm-links {float: right; width: 260px; margin: 0; margin-top: 8px; margin-right: 5px; padding: 0; text-align: center;}
 #perm-links ul {margin: 0; padding: 5px;}
 #perm-links li {display: inline; width: 150px;}
 #perm-links a {text-align: center; margin: 0; padding-top: 2px; padding-bottom: 2px;  padding-left: 10px; padding-right: 10px; }
 
-#cool-links {width: 19%; float: right;  margin-bottom: 25px; padding: 3px; padding-bottom: 60px;}
+#cool-links {
+	width: 19%;
+	float: right;
+	margin-bottom: 25px;
+	padding: 3px;
+	padding-bottom: 60px;
+	font-family: Helvetica, Arial, sans;
+	font-size: 95%
+}
 #cool-links ul {margin: 0; padding: 0;}
 #cool-links li {margin-top: 5px; margin-bottom: 5px; display: block;}
 #cool-links a {width: 95%; display: block; margin: 0; padding: 3px;}
+#cool-links p {
+	font-family: Helvetica, Arial, sans;
+	font-size: 90%
+}
 
 #main-menu {width: 15%; float: left; margin-bottom: 25px; padding: 3px; padding-bottom: 60px; text-align: center; }
 #main-menu ul {margin: 0; padding: 0;}
