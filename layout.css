@@ -1,0 +1,26 @@
+h1 {padding: 10px; padding-left: 15px;}
+h2 {margin: 0; padding: 0;}
+h3 {margin: 0; text-align: left;}
+p {text-align: justify;}
+
+#perm-links {float: right; width: 260px; margin: 0; margin-top: 8px; margin-right: 5px; padding: 0; text-align: center;}
+#perm-links ul {margin: 0; padding: 5px;}
+#perm-links li {display: inline; width: 150px;}
+#perm-links a {text-align: center; margin: 0; padding-top: 2px; padding-bottom: 2px;  padding-left: 10px; padding-right: 10px; }
+
+#cool-links {width: 19%; float: right;  margin-bottom: 25px; padding: 3px; padding-bottom: 60px;}
+#cool-links ul {margin: 0; padding: 0;}
+#cool-links li {margin-top: 5px; margin-bottom: 5px; display: block;}
+#cool-links a {width: 95%; display: block; margin: 0; padding: 3px;}
+
+#main-menu {width: 15%; float: left; margin-bottom: 25px; padding: 3px; padding-bottom: 60px; text-align: center; }
+#main-menu ul {margin: 0; padding: 0;}
+#main-menu li {margin-top: 2px; margin-bottom: 2px; display: block;}
+#main-menu a {width: 95%; display: block; margin: 0; padding: 3px;}
+
+#content {margin-left: 18%; margin-right: 22%;}
+#more-content {margin-left: 18%; margin-right: 2%;}
+#more-content img {float: right; padding-left: 4px;}
+
+#footer {clear: both; padding: 2px; padding-right: 5px;}
+h5 {margin: 0;}

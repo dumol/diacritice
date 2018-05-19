@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Language" content="ro-RO" />
+	<meta name="author" content="Mişu Moldovan" />
+	<meta name="description" content="Frequently asked question regarding the use of Romanian diacritics in free software programs" />
+	<meta name="keywords" content="Romanian, diacritics, free software, româneşte, românește, diacritice, diacritice româneşti, diacritice românești, română, limba română, tastatură, tastatură românească, tastaturi, tastaturi româneşti, tastaturi românești, fonturi, fonturi româneşti, fonturi românești, traduceri, dicţionare, dicţionar, dicționare, dicționar, standarde, standard românesc, standarde româneşti, standarde românești" />
+
+	<title>Întrebări frecvente pe tema utilizării diacriticelor în programele free software</title>
+	
+	<link rel="stylesheet" type="text/css" href="layout.css" />
+	<link rel="stylesheet" type="text/css" href="color.css" />
+</head>
+
+
+
+<body>
+<div id="perm-links">
+	<ul>
+		<li><a href="index.html">Index</a></li>
+		<li><a href="faq.html">FAQ</a></li>
+		<li><a href="despre.html">Despre</a></li>
+	</ul>
+</div>
+
+
+
+<h1>Întrebări frecvente</h1>
+
+
+
+<div id="main-menu">
+
+	<ul>
+		<li><a href="howto.html">HOWTO</a></li>
+		<li><a href="fonturi.html">Fonturi</a></li>
+		<li><a href="tastaturi.html">Tastaturi</a></li>
+		<li><a href="traduceri.html">Traduceri</a></li>
+		<li><a href="lexicoane.html">Dicţionare</a></li>	
+		<li><a href="standarde.html">Standarde</a></li>
+		<li><a href="adrese.html">Adrese utile</a></li>
+	</ul>
+
+	<img src="imagini/diacritice.png" alt="Logo Diacritice" height="118" width="94" />
+
+</div>
+
+
+
+<div id="more-content">
+
+	<h2>Cum e corect? Cu virgulă dedesubt sau cu sedilă?</h2>
+	<p>Corect este cu virgulă, aşa cum am învăţat în clasa a întâia şi cum e precizat în standardul ISO-8859-16. Adică aşa: „Șoseaua spre Țăndărei este puțin șerpuită.” Mai multe detalii în <a href="http://bucovina.chem.tue.nl/page_8.htm">articolul pe această temă</a> al lui Mugurel Ciobîcă.</p>
+	<br />
+	
+	<h2>De ce peste tot apar diacritice cu sedilă?</h2>
+	<p>Din păcate, din motive de compatibilitate. În Windows nu prea există suport pentru Ş şi Ţ cu virgulă dedesubt. Mai multe detalii în <a href="http://www.secarica.ro/html/s-uri_si_t-uri.html">articolul detaliat</a> scris de Cristian Secară pe tema problemelor din Windows. În ce priveşte aplicaţiile free software, suportul pentru ISO-8859-16 există de mult timp şi teoretic ar fi posibilă utilizarea exclusiv a diacriticelor cu virgulă dedesubt.</p>
+	<br />
+	
+	<h2>Ghilimelele de închidere nu sunt invers?</h2>
+	<p>Dacă ne întoarcem la ce am învăţat în şcoala primară, cred că suntem de acord că ghilimele de închidere pe care le-am învăţat erau de forma „99 sus”, precum apar peste tot în acest site. Datorită răspândirii ghilimelelor de tipul „66 sus”, la momentul redactării noului standard de tastatură s-a cerut o opinie autorizată din partea Academiei Române care a precizat că forma corectă a ghilimelelor de închidere este de tip „99 sus”, fapt pentru care acestea sunt singurele implementate în standardul actual.</p>
+	<br />
+	
+	<h2>Ce sunt tastele moarte?</h2>
+	<p>Tastele moarte au fost inventate din nevoia de a genera mai multe caractere decât ar încăpea în mod normal pe o tastatură. Ele sunt utilizate atunci când este necesară generarea unui caracter diacritic prin compunerea sa din litera de bază şi accentul necesar, generat prin apăsarea unei taste moarte. Pentru a genera un asemenea caracter, întâi se apasă tasta moartă şi apoi litera de bază. Tastele moarte nu produc nici un caracter când sunt apăsate o singură dată, dar schimbă felul în care următoarea apăsare de taste este interpretată. De exemplu, pentru a genera litera Á se va apăsa întâi tasta moartă ´ aflată pe nivelul trei al tastei 9 şi apoi litera A. Adică se apasă deodată AltGr+9, apoi se eliberează ambele taste şi se apasă A, cu sau fără Shift, după cum vrem o literă mare sau mică. În XFree86 / X.Org două apăsări consecutive ale unei taste moarte generează semnul diacritic asociat. Tastele „-” şi „=” nu reprezintă un caz deosebit din acest punct de vedere, singura diferenţă este că ele au în plus un simbol asociat nivelului patru (la care se ajunge cu AltGr+Shift), tastele moarte asociate fiind însă tot pe nivelul trei.</p>
+	<br />
+
+	<h2>De ce apar diacriticele Đ şi Ł pe nivelurile trei şi patru ale tastelor D şi L?</h2>
+	<p>Spre deosebire de diacriticele din limbile altor minorităţi din România, Đ şi Ł din limba polonă nu pot fi „decompuse”. De exemplu, Â poate fi decompus în litera A şi accentul circumflex ˇ. Utilizând în combinaţie cu tasta A accentul circumflex generat de tasta moartă de pe nivelul trei al tastei 2 se poate obţine caracterul „â”. Acest principiu se poate aplica majorităţii diacriticelor, dar nu şi caracterelor Đ şi Ł, care sunt deja „decompuse”.</p>
+	<br />
+	
+	<h2>De ce ß apare pe taste diferite în cele două mapări?</h2>
+	<p>Caracterul ß a fost inclus în ambele aranjamente de tastatură românească pentru că este încă utilizat de către minoritatea germană, chiar şi de cei ce folosesc „ss” în loc de „ß” (de exemplu atunci când scriu nume ce păstrează vechea grafie). Din motive evidente, în maparea primară a noului standard de tastatură locul său este pe nivelul trei al tastei S. Însă în maparea secundară acest loc este ocupat de caracterul Ş. În consecinţă, urmând aceeaşi logică ce a determinat plasarea caracterului Â pe tasta Q în maparea secundară, ß a fost plasat pe nivelul trei al tastei W.</p>
+	<br />
+
+</div>
+
+
+
+<div id="footer">
+	<h5>© 2004-2006 <a href="mailto:dumol@gnome.ro">Mişu Moldovan</a></h5>
+</div>
+
+
+
+</body>
+
+
+</html>
+

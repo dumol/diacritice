@@ -1,0 +1,36 @@
+body {background-color: #ffffff; font: normal 85% "arial" , sans-serif;}
+h1 {border: solid 1px #000000; background-color: #7f9fc0; color: #000000;}
+h2 {color: #000000;}
+h3 {color: #000000}
+
+#perm-links ul {list-style: none;}
+#perm-links a {border: solid 1px #000000; background-color: #cfe0f0; color: #000000; font-weight: bold; text-decoration: none;}
+#perm-links a:hover {background-color: #90c0ef;}
+
+#cool-links {border: solid 0px #000000}
+#cool-links ul {list-style: none;}
+
+#main-menu {border: solid 0px #000099;}
+#main-menu ul {list-style: none;}
+#main-menu li {border: solid 1px #ffffff;}
+#main-menu a {border: solid 1px #000000; background-color: #cfe0f0; color: #000000; font-weight: bold; text-decoration: none; text-align: center;}
+#main-menu a:hover {background-color: #90c0ef;}
+
+
+#content a {color: #7f9fc0; font-weight: bold; text-decoration: none;}
+#content a:hover {color: #aa0000; text-decoration: underline;}
+#content img {border: solid 2px #000000;}
+
+#footer {border: solid 1px #000000; background-color: #7f9fc0; color: #000000; text-align: right;}
+
+/*********************** Mega Add Style **************************/
+
+.mega {margin: 0; margin-top: 2px; margin-bottom: 2px; padding: 0; border: solid 2px #a0d89f; border-bottom: solid 10px #a0d89f; background-color: #e0ffe0; font-size: 90%;}
+.mega p {margin: 2px; text-align: left;}
+.mega a {color: #0000ff;}
+.mega .link {color: #000000; font-weight: bold; text-decoration: none;}
+
+/********************* New class for logos **********************/
+.logos img {border: solid 0px #000000;}
+
+
