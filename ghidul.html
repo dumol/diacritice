@@ -1,0 +1,571 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Language" content="ro-RO" />
+    <meta name="author" content="Mișu Moldovan" />
+    <meta name="description" content="The use of diacritics in Romanian translations" />
+    <meta name="keywords" content="Romanian, diacritics, free software, românește, românește, diacritice, diacritice românești, diacritice românești, română, limba română, tastatură, tastatură românească, tastaturi, tastaturi românești, tastaturi românești, fonturi, fonturi românești, fonturi românești, traduceri, dicționare, dicționar, dicționare, dicționar, standarde, standard românesc, standarde românești, standarde românești" />
+
+    <title>Ghidul traducătorului de software</title>
+
+    <link rel="stylesheet" type="text/css" href="layout.css" />
+    <link rel="stylesheet" type="text/css" href="color.css" />
+</head>
+
+
+
+<body>
+<div id="perm-links">
+    <ul>
+        <li><a href="index.html">Index</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="despre.html">Despre</a></li>
+    </ul>
+</div>
+
+
+
+<h1>Ghidul traducătorului de software</h1>
+
+
+
+<div id="main-menu">
+
+    <ul>
+        <li><a href="ghidul.html">Ghidul traducătorului</a></li>
+        <li><a href="lexicoane.html">Dicționare</a></li>
+        <li><a href="tastaturi.html">Tastaturi</a></li>
+        <li><a href="fonturi.html">Fonturi</a></li>
+    </ul>
+
+    <img src="imagini/diacritice.png" alt="Logo Diacritice" height="118" width="94" />
+
+</div>
+
+
+
+<div id="more-content">
+
+    <h2>Preambul</h2>
+
+    <p>Ca traducător ar trebui să vă fiți în primul rând un foarte bun
+      cunoscător al limbii române.
+    </p>
+    <p>Experiența ne arată că deseori suntem tentați să folosim prea
+      multe neologisme, alteori să forțăm căutarea unor termeni
+      românești atunci când păstrarea termenului original ar avea mai
+      mult sens pentru utilizatori. Iar uneori schimbăm persoana
+      sau timpul de la o traducere la alta șamd.
+    </p>
+    <p>Sugestiile din această pagină au fost scrise în speranța ca
+      traducerile să capete o formă naturală și consecventă. În rest,
+      există o singură regulă pe care ne bazăm:
+    </p>
+    <pre>Dacă nu are sens pentru mine, atunci în mod clar traducerea este greșită.
+</pre>
+    <p>(unde cei dintre noi care suferă de mania perfecțiunii vor
+    înlocui <i>pentru mine</i> cu <i>pentru bunica mea</i>)
+    </p>
+    <p>Mai jos găsiți un ghid cu sfaturi pentru traduceri. Aceasta
+      cuprinde informații generale, indicații pentru modul de traducere
+      a unor expresii sau concepte abstracte din domeniul IT, precum și
+      unele informații tehnice specifice localizărilor de software. </p>
+    <table id="toc" class="toc">
+      <tbody>
+        <tr>
+          <td>
+              <h2>Cuprins</h2>
+            <ol>
+              <li><a href="ghidul.html#Chestii.de.baz.C4.83">
+                   Lucruri de care trebuie ținut cont</a></li>
+              <li><a href="ghidul.html#Adresarea_.28rela.C8.9Bia_utilizator_-_calculator.29">
+                    Adresarea (relația utilizator - calculator)</a></li>
+              <li><a href="ghidul.html#Polite.C8.9Bea_excesiv.C4.83">
+                    Politețea excesivă</a></li>
+              <li><a href="ghidul.html#Prescurt.C4.83rile">
+                    Prescurtările</a></li>
+              <li><a href="ghidul.html#Genul">
+                    Genul</a></li>
+              <li><a href="ghidul.html#Pluralul">
+                    Pluralul</a></li>
+              <li><a href="ghidul.html#Majusculele">
+                    Majusculele</a></li>
+              <li><a href="ghidul.html#Topica_expresiilor">
+                    Topica expresiilor</a></li>
+              <li><a href="ghidul.html#Acceleratori">
+                    Acceleratori</a></li>
+              <li><a href="ghidul.html#Ghilimele">
+                    Ghilimele</a></li>
+              <li><a href="ghidul.html#Neologisme">
+                    Neologisme</a>
+                <ul>
+                  <li><a href="ghidul.html#Folosirea_cratimei_.C3.AEn_neologisme">
+                        Folosirea cratimei în neologisme</a></li>
+                  <li><a href="ghidul.html#Genul_neologismelor">
+                        Genul neologismelor</a></li>
+                </ul>
+              </li>
+              <li><a href="ghidul.html#Adaptarea_la_situa.C8.9Bii_extreme">
+                    Adaptarea la situații extreme</a></li>
+              <li><a href="ghidul.html#Articole_asociate">
+                    Articole asociate</a></li>
+              <li><a href="ghidul.html#Leg.C4.83turi_externe">
+                    Legături externe</span></a></li>
+            </ol>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h2> <span
+        id="Chestii.de.baz.C4.83"> Chestii de bază</span></h2>
+    <ul>
+      <li> Consultați cu atenție acest ghid. Vă va ajuta atât pe
+        dumneavoastră în realizarea unei traduceri de calitate, cât și
+        pe cei care vor folosi localizările prin asigurarea unor
+        traduceri consecvente.
+      </li>
+      <li> <span style="color: rgb(254, 13, 13);"><b>Este obligatoriu
+            să folosiți diacritice</b></span>. Pentru mai multe detalii
+        citiți aceste <a rel="nofollow" class="external text"
+          href="http://ro.wikipedia.org/wiki/Wikipedia:Diacritice#Sfaturi_tehnice">informații
+          tehnice</a> pentru utilizatorii diverselor sisteme de operare.
+      </li>
+      <li> <span style="color: rgb(254, 13, 13);"><b>Este obligatoriu
+            să folosiți diacriticele corecte</b></span>, pe scurt ș și ț
+        cu virgulă dedesubt. Acest lucru este perfect posibil, de
+        exemplu, în cazul tipurilor de fișier GNU gettext sau Java.
+        Excepții de la această regulă se admit numai în situațiile în
+        care structura tehnică a aplicației sau a fișierului cu
+        traducerea nu permit acest lucru (cazul aplicațiilor scrise
+        prost și care nu pot interpreta decât șiruri pe 8 biți, în
+        codare Windows CP-1250 sau ISO-8859-2).
+      </li>
+      <li> Majoritatea termenilor traduși, specifici domeniului IT, sunt
+        consemnați în <a href="http://i18n.ro/Glosar" title="Glosar">
+          Glosarul</a> folosit de echipele de localizare.
+      </li>
+      <li> Discuțiile de coordonare a localizărilor, întrebările și
+        eventualele lămuriri despre traduceri au loc în grupul Google
+        <a rel="nofollow" class="external text"
+          href="http://groups.google.com/group/diacritice">Diacritice</a>.
+        Dacă doriți să traduceți, considerăm că ar fi o idee bună să vă
+        înscrieți în acest grup, pentru a fi la curent cu discuțiile
+        și orientările legate de localizarea programelor în limba
+        română.
+      </li>
+      <li> Deși acest ghid a fost conceput pentru a veni în sprijinul
+        celor care traduc interfețe de programe de calculator, el poate
+        fi util și celor care scriu programe cu interfața în
+        limba română.
+      </li>
+      <li> Consultați pagina dedicată greșelilor frecvente din limba
+        română <a rel="nofollow"
+          href="http://dexonline.ro/corect.php">http://dexonline.ro/corect.php</a>
+      </li>
+    </ul>
+    <h2> <span
+        id="Adresarea_.28rela.C8.9Bia_utilizator_-_calculator.29">
+        Adresarea (relația utilizator - calculator) </span></h2>
+    <ul>
+      <li> când <b>utilizatorul îi dă comenzi calculatorului</b>, se
+        folosește forma <b>imperativă</b> (adresare ca de la stăpân la
+        supus):
+      </li>
+    </ul>
+    <pre>Text original:  Open
+Traducere:      Deschide
+
+Text original:  Save
+Traducere:      Salvează
+
+Text original:  Search Files
+Traducere:      Caută fișiere
+</pre>
+    <ul>
+      <li> când <b>calculatorul solicită utilizatorul să ia o decizie</b>,
+        sau când <b>calculatorul înștiințează utilizatorul</b> cu
+        privire la o acțiune pe care acesta (utilizatorul) trebuie să o
+        ia, se folosește forma <b>politicoasă</b> (adresare ca de la
+        supus la stăpân):
+      </li>
+    </ul>
+    <pre>Text original:  Do you want to continue?
+Traducere:      Doriți să continuați?
+
+Text original:  Please try again later
+Traducere:      Încercați din nou mai târziu 
+
+Text original:  You have exceeded the number of registration attempts for this session.
+                Please try again later.
+Traducere:      Ați depășit numărul de încercări de înregistrare pentru această sesiune.
+                Încercați din nou mai târziu.
+</pre>
+    <ul>
+      <li> când calculatorul raportează o stare sau o acțiune pe care o
+        realizează fără intervenția utilizatorului se folosește forma
+        reflexivă, calculatorul fiind o entitate abstractă, nu o
+        persoană sau un personaj:
+      </li>
+    </ul>
+    <pre>Text original:     Could not open file&nbsp;%s
+Traducere greșită: Nu am putut deschide fișierul&nbsp;%s
+Traducere corectă: Nu s-a putut deschide fișierul&nbsp;%s 
+
+Text original:     Receiving data from&nbsp;%s
+Traducere greșită: Primesc date de la&nbsp;%s
+Traducere corectă: Se primesc date de la&nbsp;%s 
+
+Text original:     Saving configuration
+Traducere greșită: Salvez configurația
+Traducere corectă: Se salvează configurația 
+</pre>
+    <ul>
+      <li> pentru butoane care conduc la meniuri adiționale (fără
+        acțiune imediată), sau poziții de meniu care deschid submeniuri,
+        sau meniuri care constituie titluri ale unor submeniuri, se
+        recomandă folosirea formei impersonale:
+      </li>
+    </ul>
+    <pre>Text original:     Manage...
+Context:           buton a cărui singură acțiune este deschiderea unui meniu adițional
+Traducere nerecomandată: Gestionează...
+Traducere recomandată: Gestionare...
+</pre>
+    <p>A se vedea și discuția <a rel="nofollow" class="external text"
+href="http://groups.google.com/group/diacritice/browse_frm/thread/9188bbdedc0c6159">imperativ
+        versus impersonal în meniuri cu puncte-puncte</a> pe marginea
+      acestei reguli.
+    </p>
+    <ul>
+      <li> pentru titlurile ferestrelor se folosește forma impersonală:
+      </li>
+    </ul>
+    <pre>Text original:  Saving configuration
+Traducere:      Salvare configurație 
+
+Text original:  Manage Media Usage Rights
+Traducere:      Gestionare drepturi de utilizare media
+</pre>
+    <ul>
+      <li> trebuie evitate expresiile cacofonice în traducerile
+        reflexive, folosiți modul impersonal:
+      </li>
+    </ul>
+    <pre>Text original:     Press OK to save the session
+Traducere greșită: Apăsați OK ca să se salveze sesiunea
+Traducere corectă: Apăsați OK pentru salvarea sesiunii
+</pre>
+    <h2> <span id="Polite.C8.9Bea_excesiv.C4.83">
+        Politețea excesivă </span></h2>
+    <p>Nu se traduce ad literam adresarea cu <i>Please</i>. Trebuie folosită
+      forma politicoasă utilizată în limba română, nu cea politicoasă
+      utilizată în limba engleză:
+    </p>
+    <pre>Text original:     Please enter your name
+Traducere greșită: Vă rugăm să introduceți numele
+Traducere corectă: Introduceți numele
+</pre>
+    <h2> <span id="Prescurt.C4.83rile">
+        Prescurtările </span></h2>
+    <p>Trebuiesc evitate prescurtările gen <i>dvs.</i> în loc de <i>dumneavoastră</i>,
+      ori <i>nu-i</i> în loc de <i>nu e</i> sau <i>nu este</i>. În
+      mod uzual acestea sunt întâlnite în expresii cu multe cuvinte,
+      dialoguri explicative, de configurare, sau de eroare, (foarte) rar
+      în meniuri, de aceea lungimea cuvintelor nu constituie o problemă
+      critică.
+    </p>
+    <h2> <span id="Genul"> Genul </span></h2>
+    <p>Trebuiesc evitate discriminările pe bază de sex și formulările
+      deranjante de genul el/ea, prin folosirea, pe cât posibil, a unui
+      limbaj impersonal. De asemenea, pentru a evita frustrarea
+      utilizatorului la vederea unui program care i se adresează
+      nesigur, în ambele genuri, este mai bine să se evite genul când se
+      poate.
+    </p>
+    <pre>Text original:     Are you sure you want to delete this bookmark?
+Traducere greșită: Sunteți <var>sigur(ă)</var> că doriți ...
+Traducere corectă: Sigur doriți să ștergeți acest semn de carte?
+</pre>
+    <p>Contextul este o informație suplimentară despre locul în care
+      apare textul respectiv (nu apare mereu). În exemplul de mai jos,
+      fiind vorba de <i>Nickname</i>, traducerea uzuală este <i>Pseudonim</i>,
+      așadar traducerea corectă este cea la masculin.
+    </p>
+    <pre>Text original:     (not yet valid)
+Context:           NicknameNotYetValid
+Traducere greșită: (încă nu este <var>validă</var>)
+Traducere corectă: (încă nu este valid)
+</pre>
+    <h2> <span id="Pluralul"> Pluralul </span></h2>
+    <p>Deși rareori conștientizăm acest lucru, limba română are
+      două forme de plural și una de singular, deci în total ar trebui 3
+      traduceri la mesajele cu forme de plural. <var>1 ou</var>, <var>2
+          ouă</var>, 3 ouă, ... 10 ouă, <var>20 <b>de</b> ouă</var>, ..., 101
+      ouă, 102 ouă, 120 de ouă.
+    </p>
+    <p>De exemplu în cazul GNU gettext, formele pluralului se
+      completează astfel:
+    </p>
+    <pre>- msgstr[0] conține singularul ( 1 ou )
+- msgstr[1] conține prima formă de plural ( 4 ouă sau 101 ouă etc.)
+- msgstr[2] conține a doua formă de plural ( 20 de ouă sau 120 de ouă etc. )
+</pre>
+    <p>Aceasta presupune existența, sau (dacă aceasta lipsește)
+      adăugarea, unei linii în antetul fișierului gettext PO. Codul
+      aplicației trebuie de asemenea să fie scris astfel încât să ofere
+      forme de plural în fișierul de limbă. </p>
+	<p>Forma corectă de plural în limba română pentru gettext este prin urmare:
+	</p>
+	<pre>"Plural-Forms:  nplurals=3; plural=n==1&#160;? 0&#160;: (n==0 || (n%100 &gt; 0 &amp;&amp; n%100 &lt; 20))&#160;? 1&#160;: 2;\n"
+	</pre>
+    <h2> <span id="Majusculele"> Majusculele </span></h2>
+    <p>NU trebuie folosite majuscule pentru fiecare cuvânt într-un
+      meniu, titlu, etc (doar în limba engleză cuvintele încep cu
+      majuscule în titlu).
+    </p>
+    <pre>Text original:           "Save As..."
+Traducere scrisă greșit: "Salvează Ca..."
+Traducere scrisă corect: "Salvează ca..."
+
+Text original:           "Control Center"
+Traducere scrisă greșit: "Centru De Control"
+Traducere scrisă corect: "Centru de control"
+</pre>
+    <h2> <span id="Topica_expresiilor"> Topica
+        expresiilor </span></h2>
+    <ul>
+      <li> topica expresiilor trebuie în general inversată:
+      </li>
+    </ul>
+    <pre>"An error occurred"
+"S-a produs o eroare"
+</pre>
+    <pre>"Could not open file&nbsp;%s."
+"Fișierul&nbsp;%s nu a putut fi deschis."
+</pre>
+    <ul>
+      <li> Nu creați propoziții negative cu tentă pozitivă
+      </li>
+    </ul>
+    <pre>Text original 
+       You have insufficient privileges to read this folder.
+
+Traducere confuză și nerecomandată:
+       Aveți drepturi insuficiente pentru a citi acest dosar.
+
+Pentru că traducem textul în ansamblu și nu cuvânt cu cuvânt în aceeași ordine, putem formula mai clar astfel:
+       Nu aveți drepturi suficiente pentru a citi acest dosar.
+</pre>
+    <h2> <span id="Acceleratori"> Acceleratori </span></h2>
+    <ul>
+      <li> acceleratorii sunt scurtăturile din meniuri și panourile de
+        configurare, sunt identificați prin cuvinte ce conțin o literă
+        subliniată, iar acea intrare de meniu sau configurare poate fi
+        activată folosind combinația de taste <i>Alt + tasta subliniată</i>.
+        Ei sunt marcați în textele de tradus prin precedarea literei
+        subliniate fie cu _ (linie joasă) fie cu &amp; (ampersand)
+      </li>
+      <li> în traducerea acceleratorilor de genul <i>_File</i>, <i>_Edit</i>,
+        <i>_Help</i> se încearcă de regulă păstrarea combinației de taste,
+        chiar dacă în traducere nu este prima literă din cuvânt.</li>
+      <li> în cazul în care cuvântul tradus nu conține litera
+        scurtăturii inițiale se alege prima literă din cuvânt cu
+        condiția de a nu intra în conflict cu alte intrări din meniu,
+        iar această literă să nu fie una dintre literele cu diacritice.
+      </li>
+      <li> încercați să evitați acceleratorii pe literele mai zvelte
+        (<i>i mic</i>, <i>i mare</i>, <i>l mic</i>) sau pe cele ce coboară
+        în partea de jos intersectând sublinierea (<i>g mic</i>, <i>j mic</i>,
+        <i>p mic</i>, <i>q mic</i>, <i>y mic</i>) pentru că sunt mai greu
+        de detectat din punct de vedere vizual.
+      </li>
+      <li> țineți cont de faptul că aceste combinații de taste sunt
+        efectuate utilizând tasta Alt din stânga barei de spațiu și
+        încercați să evitați combinații de taste greu de realizat cu o
+        singură mână (de exemplu <i>Alt-P</i>, <i>Alt-O</i>, <i>Alt-L</i>)
+        favorizându-le pe cele ce mai la îndemână (de exemplu <i>Alt-C</i>,
+        <i>Alt-A</i>, <i>Alt-S</i>).
+      </li>
+    </ul>
+    <pre>  _File    _Edit     &amp;Help    &amp;Delete 
+  _Fișier  _Editare  &amp;Ajutor  Șt&amp;erge
+</pre>
+    <ul>
+      <li> Nu există o metodă automată de verificare a acceleratorilor
+        duplicați dintr-un meniu ori dintr-o fereastră, va trebui să
+        importați traducerea în program (<tt>man 1 msgfmt</tt>) și să testați
+        fiecare meniu și fiecare fereastră.
+      </li>
+      <li> Pentru a verifica că nu v-a scăpat vreun accelerator în
+          fișierul sursă PO, utilizați comanda <tt>msgfmt</tt> 
+          cu opțiunea <tt>--check-accelerators</tt>
+          (consultați manualul cu <tt>man 1 msgfmt</tt> pentru detalii) .
+      </li>
+    </ul>
+    <h2> <span id="Ghilimele"> Ghilimele </span></h2>
+    <p>În limba română singurele ghilimele acceptate sunt „text” și
+      „text «altceva» text” (pentru citat în citat) adică: <a
+        rel="nofollow" class="external text"
+        href="http://www.fileformat.info/info/unicode/char/201e/index.htm">ghilimele
+        deschise</a>, <a rel="nofollow" class="external text"
+        href="http://www.fileformat.info/info/unicode/char/201d/index.htm">ghilimele
+        închise</a> și ghilimele franceze.
+    </p>
+    <p>Folosirea apostrofului (') sau a ghilimelelor duble (") din
+      repertoriul ASCII este greșită. Detalii despre ghilimelele
+      folosite în limba română se pot găsi la <a rel="nofollow"
+        href="http://www.acad.ro/alteInfo/ghilimele.doc">http://www.acad.ro/alteInfo/ghilimele.doc</a>
+    </p>
+    <h2> <span id="Neologisme"> Neologisme </span></h2>
+    <h3> <span
+        id="Folosirea_cratimei_.C3.AEn_neologisme"> Folosirea cratimei
+        în neologisme </span></h3>
+    <p>Articolul hotărât enclitic (singular și plural) se leagă
+    <b>cu cratimă</b> numai în împrumuturile neadaptate:
+      <ul>
+        <li>a căror finală prezintă deosebiri între scriere și pronunțare:
+            de exemplu <i>bleu-ul</i> [blöul];</li>
+        <li>care au finale grafice neobișnuite la cuvintele vechi din limba
+            română: <i>dandy-ul</i> (nu dandiul), <i>dandy-i</i>; 
+            <i>gay-ul</i>, <i>gay-i</i>; <i>hippy-ul</i>, <i>hippy-i</i>;
+            <i>party-ul</i>; <i>playboy-ul</i>, <i>playboy-i</i>;
+            <i>story-ul</i>, <i>story-uri</i>.</li>
+      </ul>
+    </p>
+    <p>Se recomandă atașarea <b>fără cratimă</b> a articolului la împrumuturile
+       (chiar nedaptate sub alte aspecte) care:
+      <ul>
+        <li>se termină în litere din alfabetul limbii române pronunțate ca în
+            limba română: <i>gadgetul</i> [gheğetul], <i>weekendul</i> [uĭkendul],
+            inclusiv în cazul unor anglicisme ceva mai vechi, scrise și conform DOOM1
+            fără cratimă, de exemplu <i>westernuri</i> ș.a. <a rel="nofollow"
+            href="http://acad.ro/alteInfo/nouDOOM.doc">http://acad.ro/alteInfo/nouDOOM.doc</a>
+        </li>
+   </ul>
+    </p>
+        <p>Câteva exemple:
+    </p>
+    <pre>blog-ul / blog-urile = greșit
+blogul / blogurile = corect
+</pre>
+    <pre>ping-uri = greșit
+pinguri = corect
+</pre>
+    <pre>trackback-uri = greșit
+trackbackuri = corect
+</pre>
+    <pre>server-ul = greșit
+serverul = corect
+</pre>
+    <pre>widget-uri = greșit
+widgeturi = corect
+</pre>
+    <pre>tag-urile = greșit
+tagurile = corect
+</pre>
+    <pre>e-mail-ul = greșit
+e-mailul = corect
+</pre>
+    <pre>spam-ul = greșit
+spamul = corect
+</pre>
+    <h3> <span id="Genul_neologismelor"> Genul
+        neologismelor </span></h3>
+    <p>Neologismele din domeniul IT sunt preluate cu genul neutru, ele
+      fiind inanimate. De exemplu:
+    </p>
+    <pre>driver, drivere
+</pre>
+    <h2> <span
+        id="Adaptarea_la_situa.C8.9Bii_extreme"> Adaptarea la situații
+        extreme </span></h2>
+    <p>Ce facem când întalnim o situație unde termenii traduși, puși cap
+      la cap, nu par să dea sensul dorit:
+    </p>
+    <pre>Tile children
+</pre>
+    <p>Ok, după ce alungați orice gând de a tapeta copii, încercați să deduceți
+      sensul expresiei din context. În exemplul de față este vorba despre
+      afișarea ferestrelor „copil” astfel încât să ocupe tot spațiul
+      disponibil. În acest caz, expresia cea mai intuitivă pentru
+      utilizator este:
+    </p>
+    <pre>Ferestre alăturate
+<i>sau eventual</i>
+Ferestre în mozaic
+</pre>
+    <p><b>Morala</b>: nu trebuie să vă feriți de traduceri mai
+      „îndrăznețe”, atunci când sensul unei expresii poate fi
+      îmbunătățit. Aveți însă grijă ca în cazurile în care expresia mai
+      apare și în alte locuri/fișiere, traducerea să fie făcută într-o
+      manieră consecventă.
+    </p>
+    <h2> <span id="Articole_asociate"> Articole
+        asociate </span></h2>
+    <p>Împreună cu acest ghid este indicat să consultați și următoarele
+      pagini:
+    </p>
+    <ul>
+      <li> <a href="anusetraduce.html" title="Ce nu traducem?">Recunoașterea
+          secvențelor de text ce nu trebuie traduse</a> - De multe ori
+        nu toate textele trebuie traduse, iar acest articol încearcă să
+        vă ajute să recunoașteți mai ușor textele ce nu trebuie traduse.
+      </li>
+    </ul>
+    <ul>
+      <li> <a href="gafe.html"
+          title="Greșeli frecvente">Greșeli frecvente</a> - Exemple de
+        greșeli întâlnite frecvent în traduceri. </li>
+    </ul>
+    <h2> <span id="Leg.C4.83turi_externe"> Legături
+        externe </span></h2>
+    <p>Acest articol are la bază alte articole mai vechi:
+    </p>
+    <ul>
+      <li> <a rel="nofollow"
+          href="http://gnomero.sourceforge.net/sugestii.txt">http://gnomero.sourceforge.net/sugestii.txt</a>
+        (Dan Damian, 2001)
+      </li>
+      <li> <a rel="nofollow"
+          href="https://wiki.ubuntu.com/RomanianTeam/Proiecte/Localizare/Ghid">https://wiki.ubuntu.com/RomanianTeam/Proiecte/Localizare/Ghid</a>
+      </li>
+      <li> <a rel="nofollow"
+          href="http://i18n.ro/Ghidul_traduc%C4%83torului_de_software">http://i18n.ro/Ghidul_traduc%C4%83torului_de_software</a>
+      </li>
+    </ul>
+    <p>Linkuri utile:
+    </p>
+    <ul>
+      <li> <a rel="nofollow"
+          href="http://ro-en.gsp.ro/">http://ro-en.gsp.ro/</a>
+        - Dicționar Englez-Român și Român-Englez
+      </li>
+      <li> <a rel="nofollow"
+          href="http://dexonline.ro/">http://dexonline.ro/</a> -
+        Dicționar explicativ român (consultați doar sursele oficiale)
+      </li>
+      <li> <a rel="nofollow"
+          href="http://www.seelrc.org:8080/grammar/pdf/stand_alone_romanian.pdf">http://www.seelrc.org:8080/grammar/pdf/stand_alone_romanian.pdf</a>
+        - Gramatica detaliată a limbii române.
+      </li>
+    </ul>
+
+
+</div>
+
+
+
+<div id="footer">
+    <h5>© 2001-2018 Dan Damian, <a href="mailto:dumol@l10n.ro">Mișu Moldovan</a>, <a href="https://wiki.ubuntu.com/RomanianTeam/Proiecte/Localizare">echipa de localizare românească Ubuntu</a>, Cristian Secară și mulți alții</h5>
+</div>
+
+
+
+</body>
+
+
+</html>
+
