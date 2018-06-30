@@ -1,2 +1,3 @@
-# dumol.github.io
-l10n.ro
+# Diacritice
+
+Site sources for http://diacritice.sourceforge.net
