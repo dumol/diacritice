@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="Content-Language" content="ro-RO" />
     <meta name="author" content="Mișu Moldovan" />
-    <meta name="description" content="What not to translate when localizing free software programs to Romanian" />
+    <meta name="description" content="What not to translate when localizing free software programs" />
     <meta name="keywords" content="Romanian, diacritics, free software, românește, românește, diacritice, diacritice românești, diacritice românești, română, limba română, tastatură, tastatură românească, tastaturi, tastaturi românești, tastaturi românești, fonturi, fonturi românești, fonturi românești, traduceri, dicționare, dicționar, dicționare, dicționar, standarde, standard românesc, standarde românești, standarde românești" />
 
     <title>Ce nu traducem?</title>
@@ -51,63 +51,66 @@
 
 <div id="more-content">
 
-<!-- bodycontent -->
-				<div id="mw-content-text" lang="ro" dir="ltr" class="mw-content-ltr">
-<div id="fb-root"></div>
-<p>Acesta este un articol subordonat <a href="ghid.html">Ghidului traducătorului de software</a>
-</p><p>Aici este singura zonă unde un traducător trebuie să înțeleagă niște concepte de programare pentru a putea face o traducere corectă. Și dupa cum noi credem în puterea exemplului vom abuza de ele:
-</p>
-<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Cuprins</h2></div>
-<ol>
-    <li><a href="#Texte_ce_con.C8.9Bin_marcaje_pentru_taste_rapide">Texte ce conțin marcaje pentru taste rapide</span></a></li>
-    <li><a href="#Marcajele_HTML_sau_XML">Marcajele HTML sau XML</span></a></li>
-    <li><a href="#Parametrii_pentru_liniile_de_comand.C4.83_ale_programelor">Parametrii pentru liniile de comandă ale programelor</span></a></li>
-    <li><a href="#Numele_de_macrocomenzi.2C_func.C8.9Bii.2C_proceduri_.C8.99i_constante">Numele de macrocomenzi, funcții, proceduri și constante</span></a></li>
-    <li><a href="#Variabilele_din_interiorul_textelor">Variabilele din interiorul textelor</span></a>
-    <ul>
-    <li><a href="#Numele_variabilelor">Numele variabilelor</span></a></li>
-    <li><a href="#Cazuri_.C3.AEn_care_pute.C8.9Bi_schimba_ordinea_variabilelor_din_cadrul_unui_.C8.99ir">Cazuri în care puteți schimba ordinea variabilelor din cadrul unui șir</span></a></li>
-    </ul>
-    </li>
-    <li><a href="#Constante_GTK">Constante GTK</span></a></li>
-    <li><a href="#Cheile_de_configurare_GConf">Cheile de configurare GConf</span></a></li>
-    <li><a href="#Contextul_traducerii">Contextul traducerii</span></a></li>
-</ol>
-</td></tr></table>
-<h2> <span id="Texte_ce_con.C8.9Bin_marcaje_pentru_taste_rapide"> Texte ce conțin marcaje pentru taste rapide </span></h2>
-<p>Dacă nu era clar, taste rapide = <a href="/index.php?title=Keyboard&amp;action=edit&amp;redlink=1" class="new" title="Keyboard (pagină inexistentă)">keyboard</a> shortcuts. În denumirea unor texte din meniuri sau din dialoguri se introduc unele caractere care marchează tasta rapidă cu care se accesează opțiunea respectivă.
-</p>
-<pre>„<var>_</var>File”
-„New <var>&amp;</var>Tab”
-„<var>~</var>Downloads”
+    <p>Acesta este un articol subordonat <a href="ghid.html">Ghidului traducătorului de software</a>.</p>
+    <p>Pentru a putea face traduceri valide ale programelor, un traducător trebuie să înțeleagă câteva concepte elementare de programare. Altminteri există pericolul unor traduceri nevalide ce pot influența negativ rularea unui program sau chiar terminarea sa prematură. Vom încerca o minimă îndrumare prin exemple cât mai simple.</p>
+
+    <h2>Cuprins</h2>
+
+    <ol>
+        <li><a href="#Texte_cu_acceleratori">Texte ce conțin acceleratori</a></li>
+        <li><a href="#Marcaje_HTML_sau_XML">Marcaje HTML sau XML</a></li>
+        <li><a href="#Parametri_de_comandă">Parametri în linia de comandă</a></li>
+        <li><a href="#Nume_speciale">Nume speciale de constante, macro-comenzi etc.</a></li>
+        <li><a href="#Variabile_din_interiorul_textelor">Variabile din interiorul textelor</a>
+        <ul>
+            <li><a href="#Nume_de_variabile">Nume de variabile</a></li>
+            <li><a href="#Cazuri_de_inversare">Cazuri în care puteți schimba ordinea variabilelor din cadrul unui șir</a></li>
+        </ul>
+        </li>
+        <li><a href="#Constante_GTK">Constante GTK</a></li>
+        <li><a href="#Chei_de_configurare_GConf">Chei de configurare GConf</a></li>
+        <li><a href="#Contextul_traducerii">Șiruri cu context</a></li>
+    </ol>
+
+    <h2><span id="Texte_cu_acceleratori">Texte ce conțin acceleratori</span></h2>
+
+    <p>Acceleratorii (scurtăturile, tastele rapide) sunt marcaje speciale ce apar în denumirea unor texte din meniuri sau din dialoguri pentru a desemna taste ce permit saltul rapid și necondiționat la respectiva opțiune din meniu sau dialog. Exemple:</p>
+<pre>
+<b>_</b>File
+New <b>&amp;</b>Tab
+<b>~</b>Downloads
 </pre>
-<ul><li> <var>_</var>, <var>&amp;</var> și <var>~</var> sunt în cazurile de mai sus marcatori pentru taste rapide și preced litera corspunzătoare tastei rapide. Este de preferat să păstrați aceleași taste rapide ca și în engleză, uneori când aveți de ales cu privire la traducere este recomandabil să alegeți un cuvânt care conține litera de pe tasta rapidă din engleză.
-</li></ul>
-<h2> <span id="Marcajele_HTML_sau_XML"> Marcajele HTML sau XML </span></h2>
-<p>Marcajele HTML sau etichetele XML nu se traduc. 
-</p><p>Exemplu
-</p>
-<pre>Original: &lt; strong &gt; Hello &lt;/ strong &gt;
-Greșit:   &lt; puternic &gt; Salut &lt;/ puternic &gt;
-Corect:   &lt; strong &gt; Salut &lt;/ strong &gt;
+
+    <p><var>_</var>, <var>&amp;</var> și <var>~</var> sunt în cazurile de mai sus marcaje pentru taste rapide și preced în fiecare caz litera corespunzătoare tastei respective. Pe cât posibil, încercați să păstrați aceiași acceleratori ca și în textul original. Mai multe pe această temă în <a href="ghid.html#Acceleratori">secțiunea</a> dedicată din ghidul de traducere.</p>
+
+    <h2><span id="Marcaje_HTML_sau_XML"> Marcaje HTML sau XML</span></h2>
+
+    <p>Marcajele HTML sau etichetele XML nu se traduc. Exemple: </p>
+<pre>
+&lt;strong&gt; Hello &lt;/strong&gt;       # Original
+&lt;puternic&gt; Salut &lt;/puternic&gt;   # Greșit
+&lt;strong&gt; Salut &lt;/strong&gt;       # Corect
 </pre>
-<pre>Original: See &lt;link linkend="guide"&gt; this guide &lt;/link&gt;
-Greșit: Consultați &lt;link linkend="ghid"&gt; acest ghid &lt;/link&gt;
-Corect: Consultați &lt;link linkend="guide"&gt; acest ghid &lt;/link&gt;
+    <p>Așijderea pentru valorile atribuite unor elemente HTML:</p>
+<pre>
+See &lt;link linkend="<b>guide</b>"&gt; this guide &lt;/link&gt;          # Original
+Consultați &lt;link linkend="<b>ghid</b>"&gt; acest ghid &lt;/link&gt;    # Greșit
+Consultați &lt;link linkend="<b>guide</b>"&gt; acest ghid &lt;/link&gt;   # Corect
 </pre>
-<h2> <span id="Parametrii_pentru_liniile_de_comand.C4.83_ale_programelor"> Parametrii pentru liniile de comandă ale programelor </span></h2>
-<pre>msginit "The command line options are:<var>\n</var>"
-"       <var>--quick</var>         speeds up the processing<var>\n</var>"
-"       <var>--slow</var>          slows everything down."
+
+    <h2><span id="Parametri_de_comandă"> Parametri în linia de comandă</span></h2>
+
+    <p>Când sunt apelate din linia de comandă (terminal, Command Prompt etc.), unele programe oferă opțiuni ce pot fi adăugate după numele programului pentru a-i schimba comportamentul. Asemenea parametri pot apărea la traducere precum urmează:</p>
+<pre>
+msginit "The command line options are:\n"
+"    --quick         speeds up the processing\n"
+"    --slow          slows everything down."
 </pre>
-<ul><li> <var>\n</var> este caracter special care semnifică o linie nouă.
-</li><li> <var>--quick</var> și <var>--slow</var> este un parametru pentru linia de comandă și nu se traduce.
-</li></ul>
-<p><br />
-</p><p>Text original
-</p>
-<pre>&#160;%s [options]&#160;%s &lt;name&gt; &lt;type&gt; &lt;port&gt; [&lt;txt ...&gt;]
-&#160;%s [options]&#160;%s &lt;host-name&gt; &lt;address&gt;
+
+    <p>Mai sus, <code>\n</code> este un caracter special care semnifică o linie nouă, iar <code>--quick</code> și <code>--slow</code> sunt parametri pentru linia de comandă ce nu se traduc.</p>
+    <p>Text original:</p>
+<pre> %s [options] %s &lt;name&gt; &lt;type&gt; &lt;port&gt; [&lt;txt ...&gt;]
+ %s [options] %s &lt;host-name&gt; &lt;address&gt;
  
    -h --help            Show this help
    -V --version         Show version
@@ -119,142 +122,160 @@ Corect: Consultați &lt;link linkend="guide"&gt; acest ghid &lt;/link&gt;
       --subtype=SUBTYPE An additional subtype to register this service with
    -f --no-fail         Don't fail if the daemon is not available
 </pre>
-<p>Traducere greșită
-</p>
-<pre>&#160;%s [options]&#160;%s &lt;name&gt; &lt;type&gt; &lt;port&gt; [&lt;txt ...&gt;]
-&#160;%s [options]&#160;%s &lt;host-name&gt; &lt;address&gt;
+
+    <p>Traducere greșită:</p>
+<pre> %s [options] %s &lt;name&gt; &lt;type&gt; &lt;port&gt; [&lt;txt ...&gt;]
+ %s [options] %s &lt;host-name&gt; &lt;address&gt;
  
-   -a --asistență       Afișează asistență
-   -V --versiune        Afișează versiune
-   -s --serviciu        Publică serviciu
-   -A --adresă          Publică adresă
-   -D --detaliat        Activeză modul detaliat
-   -d --domeniu=DOMENIU Domeniu pentru publicarea serviciului
+   -a --asistență       Afișare a acestui mesaj de ajutor
+   -V --versiune        Afișare a versiunii
+   -s --serviciu        Serviciul de publicat
+   -A --adresă          Adresa de publicat
+   -D --detaliat        Mesaje detaliate
+   -d --domeniu=DOMENIU Domeniul pentru publicarea serviciului
    -g --gazdă=DOMENIU   Gazda serviciului
-      --subtip=SUBTIP   Subtip adițional pentru inregistrarea serviciului
-   -e --nu-eșua         Nu eșua dacă serviciul nu este disponibil
+      --subtip=SUBTIP   Sub-tip adițional pentru înregistrarea serviciului
+   -e --nu-eșua         Fără eșuare dacă serviciul nu este disponibil
 </pre>
-<p>Traducere recomandată
-</p>
-<pre>&#160;%s [opțiuni]&#160;%s &lt;nume&gt; &lt;tip&gt; &lt;port&gt; [&lt;txt ...&gt;]
-&#160;%s [opțiuni]&#160;%s &lt;nume-gazdă&gt; &lt;adresă&gt;
+    <p>Traducere recomandată:</p>
+<pre> %s [opțiuni] %s &lt;nume&gt; &lt;tip&gt; &lt;port&gt; [&lt;txt ...&gt;]
+ %s [opțiuni] %s &lt;nume-gazdă&gt; &lt;adresă&gt;
  
-   -h --help           Afișarea acestui ajutor
-   -V --version        Afișare versiuni
-   -s --service        Publicare serviciu
-   -a --address        Publicare adresă
-   -v --verbose        Activare mod detaliat
-   -d --domain=DOMENIU Domeniu pentru publicare serviciu
+   -h --help           Afișare a acestui mesaj ajutor
+   -V --version        Afișare a versiunii
+   -s --service        Serviciul de publicat
+   -a --address        Adresa de publicat
+   -v --verbose        Mesaje detaliate
+   -d --domain=DOMENIU Domeniul pentru publicarea serviciului
    -H --host=DOMENIU   Gazda serviciului
-      --subtype=SUBTIP Subtip adițional pentru înregistrare serviciu
-   -f --no-fail        Nu eșua dacă serviciul nu este disponibil
+      --subtype=SUBTIP Sub-tip adițional pentru înregistrare serviciului
+   -f --no-fail        Fără eșuare dacă serviciul nu este disponibil
 </pre>
-<h2> <span id="Numele_de_macrocomenzi.2C_func.C8.9Bii.2C_proceduri_.C8.99i_constante"> Numele de macrocomenzi, funcții, proceduri și constante </span></h2>
-<ul><li> Cuvintele scrise doar cu majuscule
-</li><li> Cuvintele care conțin liniuța de subliniere (underscore)
-</li><li> Cuvintele care conțin majuscule și în interiorul cuvântului (CameCase)
-</li></ul>
-<pre><var>SUM(x,y)</var> will calculate the sum of the arguments.
-Please update the <var>PATH</var> environment variable.
+
+    <h2><span id="Nume_speciale"> Nume speciale de constante, macrocomenzi etc.</span></h2>
+
+    <p>Mare atenție la asemenea componente ale șirurilor de tradus ce trebuie păstrate în forma originală, precum:</p>
+    <ul>
+        <li>cuvinte scrise doar cu majuscule</li>
+        <li>cuvinte ce conțin liniuța de subliniere (<i>underscore</i>)</li>
+        <li>cuvinte ce conțin majuscule și în interiorul cuvântului (<code>camelCase</code>).</li>
+    </ul>
+
+    <p>Exemple concrete din fiecare categorie:</p>
+<pre>
+Please update the PATH environment variable.
+Increase the value of ms_to_wait for faster CPUs.
+This is determined by the value of myFavoriteColor.
 </pre>
-<p>Așa ceva se întâmplă doar dacă a scăpat din greșeală în fișierul POT un string ce nu ar fi trebuit marcat pentru traducere, în mod normal se traduce cam tot...
-</p><p>Trebuie avut grijă la traducerea cuvintelor scrise în întregime cu majuscule, deoarece pot împiedica programul să funcționeze corect (în combinație cu script-uri shell, de ex.):
-</p>
-<pre>#: installer/gnome-font-install.c:102 installer/gnome-font-install.c:104
+
+    <p>Trebuie avut grijă la traducerea cuvintelor scrise în întregime cu majuscule, deoarece pot împiedica programul să funcționeze corect, de exemplu:</p>
+<pre>
 #: installer/gnome-font-install.c:106 installer/gnome-font-install.c:109
    msgid "PATH"
    msgstr "CALE" (greșit)
    msgstr "PATH" (corect)
 </pre>
-<p>Pentru a verifica faputul că variabila trebuie sau nu tradusă consultați codul sursă. În cazul în care sunteți nesiguri nu traduceți acel string.
-</p><p>Pentru a fi siguri de efectul unei traduceri, apăsați 's' în Emacs/po-mode și se va deschide o fereastră cu linia din codul sursă (dacă e disponibil) unde apare mesajul. Aceeași opțiune există și în editorul PoEdit în cazul în care se traduce folosind strucutra de fișiere cu cod sursă.
-</p>
-<h2> <span id="Variabilele_din_interiorul_textelor"> Variabilele din interiorul textelor </span></h2>
-<h3> <span id="Numele_variabilelor"> Numele variabilelor </span></h3>
-<p>Numele variabilelor nu se traduce. 
-</p><p>De exemplu „$nume” este numele unei variabile Perl sau PHP
-</p>
-<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="php source-php"><pre class="de1"><span class="st0">&quot;I found <span class="es4">$number</span> ethernet device.&quot;</span>      <span class="co2"># Original
-</span><span class="st0">&quot;S-a găsit <span class="es4">$num</span>ăr dispozitiv ethernet&quot;</span>  <span class="co2"># Greșit
-</span><span class="st0">&quot;S-a găsit <span class="es4">$number</span> dispozitiv ethernet&quot;</span> <span class="co2"># Corect</span></pre></div></div>
-<p>Un alt exemplu, „%(name)s” este numele unei variabile + formatul de tipărire în Python. În acest caz „S”-ul de la sfârșit nu este o eroare clasică de adăugare a unui plural în engleză ci indică faptul că variabila trebuie tipărită ca un șir - ca „%s”, doar că variabila are un nume. Poate fi întâlnită și <b>%(name)d</b> sau sub alte forme.
-</p>
-<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="python source-python"><pre class="de1"><span class="st0">&quot;Delete&#160;%(name)s&#160;?&quot;</span>   <span class="co1"># Original</span>
-<span class="st0">&quot;Ștergeți&#160;%(nume)le?&quot;</span>  <span class="co1"># Greșit</span>
-<span class="st0">&quot;Ștergeți&#160;%(nume)s?&quot;</span>   <span class="co1"># Greșit</span>
-<span class="st0">&quot;Ștergeți&#160;%(name)s?&quot;</span>   <span class="co1"># Corect</span></pre></div></div>
-<h3> <span id="Cazuri_.C3.AEn_care_pute.C8.9Bi_schimba_ordinea_variabilelor_din_cadrul_unui_.C8.99ir"> Cazuri în care puteți schimba ordinea variabilelor din cadrul unui șir </span></h3>
-<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="cpp source-cpp"><pre class="de1"> <span class="st0">&quot;%2$s contains&#160;%1$d monkeys&quot;</span></pre></div></div>
-<p>În acest caz puteți să faceți o traducere și de genul:
-</p>
-<pre>"<var>%1$d</var> maimuțe sunt în <var>%2$s</var>"
+
+    <p>Pentru a verifica faptul că variabila trebuie sau nu tradusă, consultați codul sursă. În cazul în care sunteți nesigur, mai bine lăsați acel șir netradus.</p>
+    <p>De exemplu, apăsați <i>s</i> în Emacs/po-mode și se va deschide o fereastră cu linia din codul sursă (dacă e disponibil) unde apare mesajul. Aceeași opțiune există și în editorul PoEdit în cazul în care se traduce folosind structura de fișiere cu cod sursă.</p>
+
+    <h2><span id="Variabile_din_interiorul_textelor"> Variabile din interiorul textelor</span></h2>
+
+    <h3><span id="Nume_de_variabile"> Nume de variabile</span></h3>
+    <p>Numele variabilelor nu se traduc.</p>
+    <p>De exemplu, în limbajele de programare Perl sau PHP, <code>$NUMBER</code> este o variabilă care la momentul execuției programului va fi înlocuită cu o valoare sau alta.</p>
+<pre>
+&quot;Found ethernet device number $number.&quot;              # Original
+&quot;S-a găsit dispozitivul ethernet numărul $număr.&quot;    # Greșit
+&quot;S-a găsit dispozitivul ethernet numărul $number.&quot;   # Corect
 </pre>
-<p>Cazul de mai sus exemplifică doar faptul că șirurile de forma <var>%număr$</var> pot fi schimbate între ele. Atenție: dacă nu conțin după <var>%s</var> un număr urmat imediat de <var>$</var> nu puteți să le schimbați ordinea.
-</p><p>În Python și probabil și în alte limbaje, numărul poate fi înlocuit cu un nume:
-</p>
-<pre> Sursă&#160;:&#160;%(name)s has a score of&#160;%(score)03d.
- Sursă fără nume:&#160;%s has a score of&#160;%03d.
- Corect:&#160;%(name)s are scorul&#160;%(score)03d.
- Utilizatorul va vedea ceva de genul: George are scorul 200.
- Tot corect:&#160;%(score)03d este scorul atins de&#160;%(name)s.
-Utilitatea e pentru o exprimare de genul: 200 este scorul atins de George
+
+    <p>Un alt exemplu, <code>%(name)s</code> este numele unei variabile + formatul de tipărire în Python. În acest caz <code>s</code>-ul de la sfârșit nu este o eroare clasică de adăugare a unui plural în engleză, ci indică faptul că variabila trebuie tipărită ca un șir, ca <code>%s</code>, doar că variabila are un nume, mai precis <code>name</code>. Poate fi întâlnită și sub forma <code>%(name)d</code> sau sub alte forme.</p>
+<pre>
+&quot;Delete %(name)s ?&quot;    # Original
+&quot;Ștergeți %(nume)le?&quot;  # Greșit
+&quot;Ștergeți %(nume)s?&quot;   # Greșit
+&quot;Ștergeți %(name)s?&quot;   # Corect
 </pre>
-<h2> <span id="Constante_GTK"> Constante GTK </span></h2>
-<p>Se întamplă ca unele constante GTK să intre în fișierele de localizare. Aceste texte nu trebuie traduse și ar trebui adăugat un bug la echipa de dezvoltare a programului cu pricina
-</p>
-<pre>gtk-ok, gtk-cancel
+
+    <h3><span id="Cazuri_de_inversare"> Cazuri în care puteți schimba ordinea variabilelor din cadrul unui șir</span></h3>
+
+    <p>Un caz mai rar întâlnit de text ce include variabile:</p>
+<pre>
+&quot;%2$s contains %1$d monkeys&quot;</span>
+</pre>
+
+    <p>În acest caz puteți să faceți și o traducere de genul:</p>
+<pre>
+"%1$d maimuțe sunt în %2$s"
+</pre>
+
+    <p>Cazul de mai sus exemplifică faptul că șirurile de forma <code>%număr$</code> pot fi schimbate între ele. Atenție! Dacă nu conțin după <code>%s</code> un număr urmat imediat de <code>$</code>, nu puteți să le schimbați ordinea.</p>
+    <p>În Python, și probabil și în alte limbaje, numărul poate fi înlocuit cu un nume:</p>
+<pre>
+"%(name)s has a score of %(score)03d."       Original
+"%s has a score of %03d."                    Variantă fără nume
+"%(name)s are scorul %(score)03d."           Corect
+"%(score)03d este scorul atins de %(name)s." Corect
+</pre>
+
+    <p> Utilizatorul va vedea ceva de genul: <i>George are scorul 200</i>. Alternativa e pentru o exprimare de genul: <i>200 este scorul atins de George.</i></p>
+
+    <h2><span id="Chei_de_configurare_GConf"> Chei de configurare GConf</span></h2>
+
+    <p>De multe ori apar traduceri ce conțin numele cheii gconf sau valori acceptate de o cheie gconf.</p>
+    <p>Text original ce conține referințe la un nume de cheie gconf:</p>
+<pre>
+The port which the server will listen to if the 'use_alternative_port' key is set to true.
+Valid values are in the range from 5000 to 50000.
+</pre>
+
+    <p>Traducere recomandată:</p>
+<pre>
+Portul pe care să asculte serverul în cazul în care cheia „use_alternative_port” este activată.
+Valorile valide sunt între 5000 și 50000.
+</pre>
+
+    <p>Text original cu valori acceptate de o cheie gconf:</p>
+<pre>
+This key controls the behavior of the status icon. There are three options:
+  "always" - The icon will be always there;
+  "client" - You will see the icon only when there is someone connected, this is the default;
+  "never" - Never shows the icon.
+</pre>
+
+    <p>Traducere recomandată:</p>
+<pre>
+Această cheie controlează comportamentul iconiței de stare. Există trei opțiuni:
+  „always” - Iconița va fi în permanență afișată;
+  „client” - Iconița va fi afișata doar când este cineva conectat, aceasta este valoarea implicită;
+  „never” - Iconița nu va fi niciodată afișată.
+</pre>
+
+    <h2><span id="Contextul_traducerii"> Șiruri cu context</span></h2>
+
+    <p>Uneori mesajele ce trebuie traduse conțin informații privind contextul în care trebuie făcută traducerea. Contextul se află la începutul șirului de text și se termină cu caracterul <code>|</code>. Contextul nu trebuie tradus. Exemple:</p>
+<pre>
+"direction|Up"    Original
+"direcție|Sus"    Greșit
+"direction|Sus"   Greșit
+"În sus"          Corect
+</pre>
+
+    <h2><span id="Constante_GTK"> Constante GTK</span></h2>
+    <p>Se întamplă ca unele constante GTK să intre în fișierele de localizare. Aceste texte nu trebuie traduse și ar trebui raportat cazul la echipa de dezvoltare a programului respectiv. Exemple:</p>
+<pre>
+gtk-ok
+gtk-cancel
 toolbar-icon
 </pre>
-<h2> <span id="Cheile_de_configurare_GConf"> Cheile de configurare GConf </span></h2>
-<p>De multe ori apar traduceri ce conțin numele cheii gconf sau valori acceptate de o cheie gconf.
-</p><p><br />
-Text original ce conține referințe la un nume de cheie gconf
-</p>
-<pre> The port which the server will listen to if the 'use_alternative_port' key is set to true.
- Valid values are in the range from 5000 to 50000.
-</pre>
-<p>Traducere recomandată
-</p>
-<pre> Portul pe care să asculte serverul în cazul în care cheia „use_alternative_port” este activată.
- Valorile valide sunt între 5000 și 50000.
-</pre>
-<p>Text original cu valori acceptate de o cheie gconf:
-</p>
-<pre> This key controls the behavior of the status icon. There are three options: "always" - The icon will be always there;
- "client" - You will see the icon only when there is someone connected, this is the default behavior; "never" - Never shows the icon.
-</pre>
-<p>Traducere recomandată
-</p>
-<pre> Această cheie controlează comportamentul pictogramei de stare. Există trei opțiuni: „always” - pictograma
- va fi în permanență afișată; „client” - Veți vedea pictograma doar când este cineva conectat, aceasta este
- valoare implicită; „never” - Nu afișa niciodată pictograma.
-</pre>
-<h2> <span id="Contextul_traducerii"> Contextul traducerii </span></h2>
-<p>Uneori textul ce trebuie tradus conține informații privind contextul în care trebuie făcută traducerea. Contextul se află la începutul textului și se termină în caracterul „|”. Contextul nu trebuie tradus.
-</p><p>Exemplu:
-</p>
-<pre>Original: „direction|Up”
-Greșit: „direcție|Sus”
-Greșit: „direction|Sus”
-Corect: „În sus”
-</pre>
-<!-- 
-NewPP limit report
-Preprocessor visited node count: 68/1000000
-Preprocessor generated node count: 112/1000000
-Post‐expand include size: 0/2097152 bytes
-Template argument size: 0/2097152 bytes
-Highest expansion depth: 2/40
-Expensive parser function count: 0/100
--->
-</div>				<!-- /bodycontent -->
 
 </div>
 
 
 
 <div id="footer">
-    <h5>© 2007-2011 Sorin Sbârnea, Adi Roiban și alții</a></h5>
+    <h5>© 2007-2018 Sorin Sbârnea, Adi Roiban, Mișu Moldovan și alții</a></h5>
 </div>
 
 
